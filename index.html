@@ -1,17 +1,52 @@
 <html>
 
 <head>
+    <style>
+
+        table {
+            width: 100%;
+        }
+
+        .contact {
+            text-decoration: none;
+        }
+
+        .menu-container {
+            width: 30%;
+            margin: 0 auto;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            padding-top: 83px;
+        }
+
+        #contactId {
+            color: white;
+        }
+    </style>
 
 </head>
 <body>
 <div class="menu-container">
-    <a href="home.html">Home</a>
-    <a href="contact.html">Contact</a>
+    <a style="text-decoration: none" href="home.html">Home</a>
+    <a class="contact" id="contactId" href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
 </div>
 <div class="banner-container">
-    <img src="images/banner.jpg">
+    <img style="width: 100%" src="images/banner.jpg">
 </div>
-<div class="paragraph-container">
+<div  class="adhoc-container">
+    <div style="background-color: burlywood;height: 200px;width: 20%;float: left;margin:5px;" class="left-container">
+        <p>Registration</p>
+    </div>
+    <div style="background-color: aquamarine;height: 200px;width: 30%;float: left" class="middle-container">
+        <p>Middle content</p>
+    </div>
+    <div style="background-color: rebeccapurple;height: 200px;width: 20%;float: left" class="middle-container">
+        <p>Right </p>
+    </div>
+</div>
+<div class="paragraph-container menu-container">
     <p>Hello world!We are students of 5BF</p>
 
     <h1>This is header 1</h1>
@@ -55,7 +90,8 @@
         <table>
             <tr>
                 <td>Studetn Name</td>
-                <td><input name="studentName" required id="studentName" type="text" placeholder="Enter Student Name"></td>
+                <td><input name="studentName" required id="studentName" type="text" placeholder="Enter Student Name">
+                </td>
             </tr>
             <tr>
                 <td>Student ID</td>
@@ -85,7 +121,5 @@
         </table>
     </form>
 </div>
-
-
 </body>
 </html>

@@ -5,6 +5,66 @@
     <title>Title</title>
 </head>
 <body>
-<p>This is the Home Page</p>
+<table>
+    <tr>
+        <td>First Number</td>
+        <td>
+            <input name="firstNumber" id="firstNumber" placeholder="Enter first number">
+        </td>
+    </tr>
+    <tr>
+        <td>Second Number</td>
+        <td>
+            <input name="secondNumber" id="secondNumber" placeholder="Enter second number">
+        </td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td>
+            <input name="result" id="result" placeholder="Result">
+        </td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td id="resultTd">
+
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input  onclick="jsfunction()" type="button" name="sbumitButton" id="sbumitButton" value="Submit">
+        </td>
+    </tr>
+
+</table>
 </body>
+<script>
+    function jsfunction()
+    {
+        var fistNumber=document.getElementById('firstNumber').value;
+        var secondNumber=document.getElementById('secondNumber').value;
+       // alert(fistNumber);
+    // alert("Hellow world");
+    //var fistNumber=10;
+    //var secondNumber=20;
+   // alert("The sum is="+(Number(fistNumber)+Number(secondNumber)));
+        var result=fistNumber*secondNumber;
+        document.getElementById('result').value=result;
+        document.getElementById('resultTd').innerHTML=result;
+        //document.write("The sum is="+(Number(fistNumber)+Number(secondNumber)));
+
+        //var getFromuser=prompt("Enter a numberic value");
+        //alert(getFromuser);
+        document.getElementById('sbumitButton').style.backgroundColor="blue";
+       // confirm("Do you want to delete?");
+
+        const dataArray=["karim","rahim","jhon"];
+
+        for (let index=0;index<dataArray.length;index++)
+        {
+            document.write(dataArray[index]+'<br>');
+        }
+    }
+</script>
 </html>

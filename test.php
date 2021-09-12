@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 //echo 'Hello world';
 //
 //$data=100; /*variable declaration*/
@@ -56,3 +57,6 @@
     </table>
 </form>
 
+<?php
+include 'footer.php';
+?>
